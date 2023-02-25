@@ -12,7 +12,6 @@ const TrainingWordsPage = () => {
 
 	const { speak, cancel } = useSpeakText()
 
-	console.log('word', word)
 	useEffect(() => {
 		cancel()
 		speak(word || '')
